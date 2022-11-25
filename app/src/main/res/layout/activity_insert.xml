@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity"
+    android:gravity="center">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Név"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:id="@+id/nev"
+        android:layout_marginBottom="10sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ország"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:id="@+id/orszag"
+        android:layout_below="@+id/nev"
+        android:layout_marginBottom="10sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lakosság"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:id="@+id/lakossag"
+        android:layout_below="@+id/orszag"
+        android:inputType="number"
+        android:layout_marginBottom="10sp"
+        />
+    <LinearLayout android:id="@+id/LinearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/lakossag"
+        android:layout_marginTop="60sp">
+
+        <Button
+            android:text="Felvétel"
+            android:id="@+id/insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"/>
+
+        <Button
+            android:text="Vissza"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
